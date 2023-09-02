@@ -11,7 +11,7 @@ namespace ProyectoInvestigacion.Shared.Entidades
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "El nombre es requerido")]
+        [Required(ErrorMessage =  "El nombre es requerido")]
         public string Nombre { get; set; } = null;
 
         [Required(ErrorMessage = "El apellido es requerido")]
