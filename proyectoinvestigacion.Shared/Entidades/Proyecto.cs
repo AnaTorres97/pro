@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace proyectoinvestigacion.Shared.Entidades
 {
-    public class proyectos
+    public class Proyecto
     {
         public int Id { get; set; }
 
