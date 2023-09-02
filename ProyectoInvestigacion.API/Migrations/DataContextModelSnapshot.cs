@@ -2,20 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using proyectoinvestigacion.API.Data;
+using ProyectoInvestigacion.API.Data;
 
 #nullable disable
 
-namespace proyectoinvestigacion.API.Migrations
+namespace ProyectoInvestigacion.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230902174230_Inicial2")]
-    partial class Inicial2
+    partial class DataContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,7 +21,7 @@ namespace proyectoinvestigacion.API.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("proyectoinvestigacion.Shared.Entidades.Investigador", b =>
+            modelBuilder.Entity("ProyectoInvestigacion.Shared.Entidades.Investigador", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -60,7 +57,7 @@ namespace proyectoinvestigacion.API.Migrations
                     b.ToTable("Investigadores");
                 });
 
-            modelBuilder.Entity("proyectoinvestigacion.Shared.Entidades.Proyecto", b =>
+            modelBuilder.Entity("ProyectoInvestigacion.Shared.Entidades.Proyecto", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

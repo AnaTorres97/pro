@@ -5,22 +5,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace proyectoinvestigacion.Shared.Entidades
+namespace ProyectoInvestigacion.Shared.Entidades
 {
     public class Proyecto
     {
         public int Id { get; set; }
 
-        [Required (ErrorMessage = "El nombre del proyecto es requerido")]
+        [Required(ErrorMessage = "El nombre del proyecto es requerido")]
         public string NombrePro { get; set; } = null;
-        [Required (ErrorMessage = "la descripción es requerida")]
+        [Required(ErrorMessage = "la descripción es requerida")]
         public string Descripcion { get; set; } = null;
 
         [Required(ErrorMessage = "El lider es requerido")]
-        public string lider { get; set; } = null; 
+        public string lider { get; set; } = null;
         public string Area { get; set; } = null;
         public string FeInicio { get; set; } = null;
         public string FeFinal { get; set; } = null;
-    
+
     }
 }

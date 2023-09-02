@@ -1,14 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
-using proyectoinvestigacion.Shared.Entidades;
+﻿using System.Collections.Generic;
+using System.Reflection.Emit;
+using Microsoft.EntityFrameworkCore;
+using ProyectoInvestigacion.Shared.Entidades;
 
-namespace proyectoinvestigacion.API.Data
+namespace ProyectoInvestigacion.API.Data
 {
-    public class DataContext : DbContext 
+    public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options) : base (options) {
-        
-        }  
-        public DbSet<Proyecto>Proyectos { get; set; }
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        {
+
+        }
+        public DbSet<Proyecto> Proyectos { get; set; }
         public DbSet<Investigador> Investigadores { get; set; }
 
 
@@ -22,6 +25,4 @@ namespace proyectoinvestigacion.API.Data
 
 
     }
-
 }
-

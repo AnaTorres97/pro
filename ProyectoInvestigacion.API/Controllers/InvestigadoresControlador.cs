@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
-using proyectoinvestigacion.API.Data;
-using proyectoinvestigacion.Shared.Entidades;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProyectoInvestigacion.API.Data;
+using ProyectoInvestigacion.Shared.Entidades;
 
-namespace proyectoinvestigacion.API.Controllers
+namespace ProyectoInvestigacion.API.Controllers
 {
     [ApiController]
     [Route("api/investigadores")]

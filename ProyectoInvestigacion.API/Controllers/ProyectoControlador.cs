@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
-using proyectoinvestigacion.API.Data;
-using proyectoinvestigacion.Shared.Entidades;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProyectoInvestigacion.API.Data;
+using ProyectoInvestigacion.Shared.Entidades;
 
-namespace proyectoinvestigacion.API.Controllers
+namespace ProyectoInvestigacion.API.Controllers
 {
     [ApiController]
     [Route("api/Proyecto")]
@@ -17,14 +17,24 @@ namespace proyectoinvestigacion.API.Controllers
         }
 
         // get por lista
-       
+
         [HttpGet]
 
+        public async Task<ActionResult> Get()
+        {
+
+            //200 Ok
+
+            return Ok(await _context.Proyectos.ToListAsync());
+        }
+
+        // get por parametro
+        [HttpGet("{id:int}")]
         public async Task<ActionResult> Get(int id)
         {
 
-          
-            var proyecto = await _context.Proyectos.FirstOrDefaultAsync(x => x.Id == id);
+            
+            var proyecto = await _context.Investigadores.FirstOrDefaultAsync(x => x.Id == id);
 
             if (proyecto == null)
             {
@@ -47,6 +57,3 @@ namespace proyectoinvestigacion.API.Controllers
         }
     }
 }
-
-    
-

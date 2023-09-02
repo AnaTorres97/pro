@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace proyectoinvestigacion.API.Migrations
+namespace ProyectoInvestigacion.API.Migrations
 {
     /// <inheritdoc />
-    public partial class Inicial2 : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

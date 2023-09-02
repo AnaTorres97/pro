@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace proyectoinvestigacion.Shared.Entidades
+namespace ProyectoInvestigacion.Shared.Entidades
 {
     public class Investigador
     {

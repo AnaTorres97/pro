@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using proyectoinvestigacion.API.Data;
+using ProyectoInvestigacion.API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
