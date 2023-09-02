@@ -15,6 +15,8 @@ namespace proyectoinvestigacion.Shared.Entidades
         public string NombrePro { get; set; } = null;
         [Required (ErrorMessage = "la descripción es requerida")]
         public string Descripcion { get; set; } = null;
+
+        [Required(ErrorMessage = "El lider es requerido")]
         public string lider { get; set; } = null; 
         public string Area { get; set; } = null;
         public string FeInicio { get; set; } = null;
