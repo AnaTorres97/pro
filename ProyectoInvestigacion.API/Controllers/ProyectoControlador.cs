@@ -33,7 +33,7 @@ namespace ProyectoInvestigacion.API.Controllers
         public async Task<ActionResult> Get(int id)
         {
 
-            
+             
             var proyecto = await _context.Investigadores.FirstOrDefaultAsync(x => x.Id == id);
 
             if (proyecto == null)
