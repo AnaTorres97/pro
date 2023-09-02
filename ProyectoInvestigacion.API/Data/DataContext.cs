@@ -9,7 +9,7 @@ namespace ProyectoInvestigacion.API.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-
+             
         }
         public DbSet<Proyecto> Proyectos { get; set; }
         public DbSet<Investigador> Investigadores { get; set; }
